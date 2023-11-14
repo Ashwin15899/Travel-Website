@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Bookings</title>
+    <link rel="stylesheet" href="./CSS/flight.css">
+    <script src="https://kit.fontawesome.com/69d1526178.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><b>HAPPY<span style="color: rgb(157, 232, 45);">TRIP</span></b></a>
+        </div>
+        <div class="spacer"></div>
+        <ul id="ul--container">
+            <li><a href="./train.html"><b>TRAINS</b></a></li>
+            <li><a href="./bus.html"><b>BUSES</b></a></li>
+            <li><a href="./hotel.html"><b>HOTELS</b></a></li>
+        </ul>
+        <div id="icon">
+            <a href="javascript:void(0);" onclick=myFunction()>
+                <i class="fa-solid fa-bars" style="color:white;"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div id="home">
+            <div class="home--container">
+                <div class="background--overlay"></div>
+                <div class="home--img">
+                    <img src="./Images/flight-take-off.png" alt="flight-takeoff">
+                </div>
+                <div class="bread--crumbs"><a href="./index.html"><b>Home </a>>> Flight</b></div>
+                <div class="input--container">
+                    <p class="search--flight"><b>Search flights</b></p>
+                    <p class="enjoy--line">Enjoy hassle free bookings with Cleartrip</p>
+                    <form id="input--content">
+                        <div class="selection">
+                            <div class="trip--plan">
+                                <input type="radio" id="name1" name="radio1" value="oneway">
+                                <label for="name1"><b>One way</b></label>
+                            </div>
+                            <div class="trip--plan">
+                                <input type="radio" id="name2" name="radio1" value="roundtrip">
+                                <label for="name2"><b>Round trip</b></label>
+                            </div>
+                        </div>
+                        <div class="people">
+                            <input type="text" placeholder="No.of.adults (Above 15)">
+                            <input type="text" placeholder="No.of.children (3 to 14)">
+                            <input type="text" placeholder="No.of.children (below 2)">
+                        </div>
+                        <div class="from--to">
+                            <input type="text" placeholder="departing">
+                            <button><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+                            <input type="text" placeholder="landing">
+                        </div>
+                        <div class="dates">
+                            <button>
+                                <input type="date">
+                                <span><b>Trip Date</b></span>
+                            </button>
+                            <button class="return">
+                                <input type="date">
+                                <span><b>Return</b></span>
+                            </button>
+                        </div>
+                        <button class="flight--button">Search flights</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="popular--searches">
+            <div class="ps--container">
+                <div class="ps--head">Popular Searches</div>
+                <div class="ps--content">
+                    <p>New Delhi - London</p>
+                    <p>New Delhi - Paris</p>
+                    <p>Bangalore - New Delhi</p>
+                    <p>Chennai - New Delhi</p>
+                </div>
+            </div>
+        </div>
+        <div id="popular--destinations">
+            <div class="pd--container">
+                <div class="pd--heading">Popular Destinations</div>
+                <div class="pd--content">
+                    <div class="london">
+                        <img src="./Images/london.jpg" alt="london">
+                        <div class="imgGrad">
+                            <p class="cities"><b>London</b></p>
+                        </div>
+                    </div>
+                    <div class="paris">
+                        <img src="./Images/paris.jpg" alt="paris">
+                        <div class="imgGrad">
+                            <p class="cities"><b>Paris</b></p>
+                        </div>
+                    </div>
+                    <div class="delhi">
+                        <img src="./Images/New-Delhi.jpg" alt="New-Delhi">
+                        <div class="imgGrad">
+                            <p class="cities"><b>New Delhi</b></p>
+                        </div>
+                    </div>
+                    <div class="bangalore">
+                        <img src="./Images/bangalore.jpg" alt="bangalore">
+                        <div class="imgGrad">
+                            <p class="cities"><b>Bangalore</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="detail">
+            <div class="detail--container">
+                <div class="dc--head">Why HappyTrip?</div>
+                <p>
+                    It is no longer an uphill battle to get the lowest airfare and book tickets online. Happytrip is all
+                    about making travel easy, affordable and simple. From international flights to domestic flights;
+                    from early morning flights to late night flights, from cheap flights to luxurious ones. Happytrip
+                    helps you complete your flight booking in just a few clicks. Your online flight booking experience
+                    is seamless with our features like:
+                </p>
+                <p><b>HT Flexmax:</b>Reschedule or cancel your domestic flight booking for free up to 24 hours
+                    before departure.</p>
+                <p><b>HT Flex:</b>Amend your domestic flight booking against your date of travel and choice of
+                    airline. Say hello to flexible flight bookings!</p>
+                <p><b>Medi-cancel refund: </b>Cancel your domestic flight booking easily on valid medical grounds
+                    and get up to ₹3500 against airline cancellation charges per passenger per segment.</p>
+                <p><b>International travel insurance:</b>Get stress-free coverage against a vast range of
+                    uncertainties for all international destinations at only ₹89 per user per day.</p>
+                <p>And with our round-the-clock customer service, we ensure no queries or concerns regarding your flight
+                    tickets are left unresolved.</p>
+                <div class="dc--head">How to search and book cheap flights on Happytrip?</div>
+                <p>Looking for flights and booking flight tickets is simple and seamless on Happytrip.</p>
+                <ul>
+                    <li>Enter source and destination city/airport</li>
+                    <li>Select the date of travel</li>
+                    <li>Choose the number of travellers</li>
+                </ul>
+                <p>Hit enter and there you go! You have a search list of all the flights available, sorted according to
+                    price. You can further filter your search by choosing preferences and filters like time, duration,
+                    number of stops, and by airlines or even look for other dates simply by clicking on the calendar on
+                    the right side of the page.</p>
+                <div class="dc--head">How to make flexible flight bookings with changeable dates?</div>
+                <p>While making your flight booking, make sure to select the 'HT Flex' or 'HT Flexmax' option before you
+                    confirm the air ticket. At a minimal cost, this allows you to modify your flight booking dates and
+                    airlines. So in case of any change in plans, Happytrip has got you covered!</p>
+                <div class="dc--head">How to cancel flights online on Happytrip?</div>
+                <p>In case you wish to cancel your booking due to any reason, simply -</p>
+                <ul>
+                    <li>Select the trip you want to cancel</li>
+                    <li>Click on the “Cancellations” link</li>
+                    <li>Select the passengers to cancel the booking for. Then hit “Review cancellation”</li>
+                    <li>Review passenger selection and refund amount</li>
+                    <li>Click on “Yes, cancel now”</li>
+                </ul>
+                <p>That's it. you're done! Sit back and wait for your refund that's guaranteed to be processed within 24
+                    hours. While making your flight booking, select the 'HT Flexmax' option before you confirm the air
+                    ticket, to cancel flight bookings without having to pay hefty cancellation charges!</p>
+                <div class="dc--head">What are the benefits of booking flights online with Happytrip?</div>
+                <p>Get the best flight fares with exciting flight offers on your air ticket when you book with
+                    Happytrip. Unmissable sales and deals like Travel Max Sale, Big Travel Sale, Happytrip Tatkaal, etc.
+                    offer never-seen-before discounts that help you book flights at affordable rates. Best flight
+                    discounts await you when you book with bank cards like ICICI, Bank of Baroda, HDFC, Axis, Kotak etc.
+                </p>
+                <div class="dc--head">What's more?</div>
+                <p>Flight ticket booking or planning your travel is made simpler with our round trip and multicity
+                    options. When you hit enter, your search list page shows the results for both onward and return in a
+                    split screen format letting you choose flights in one go for a round trip. The multicity search page
+                    shows a list of complete itineraries that removes the hassle of you calculating time, transfers and
+                    layovers letting you finish your online flight booking. To ensure you get the best price we
+                    highlight offers, sales and other promotions on the checkout page. Post booking, our portal allows
+                    for easy cancellations or amendments without having to make calls to the airlines.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer--container1">
+            <div class="footer--about1">
+                <div class="logo">
+                    <a href="./index.html"><b>HAPPY<span style="color: rgb(136, 201, 39);">TRIP</span></b></a>
+                </div>
+                <p>Happytrip is one of the world's largest online travel ticket booking service trusted by over 25
+                    million
+                    happy customers globally. Happytrip offers travel ticket booking through its website, iOS and
+                    Android
+                    mobile apps for all major travel things.
+                </p>
+                <div class="footer--sm">
+                    <h2>Find us on : </h2>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer--about2">
+                <h3>About Happytrip</h3>
+                <p>About us</p>
+                <p>Contact us</p>
+            </div>
+            <div class="info">
+                <h3>Info</h3>
+                <p>T & C</p>
+                <p>Privacy policy</p>
+                <p>FAQ</p>
+            </div>
+            <div class="global--sites">
+                <h3>Global sites</h3>
+                <p>India</p>
+                <p>Sri lanka</p>
+                <p>Malaysia</p>
+                <p>Singapore</p>
+                <p>Indonesia</p>
+            </div>
+            <div class="our--partners">
+                <h3>Our partners</h3>
+                <p>Air Asia</p>
+                <p>Air India</p>
+                <p>IndiGo</p>
+                <p>Redbus</p>
+                <p>STC'S</p>
+                <p>Trivago hotels</p>
+                <p>OYO hotels</p>
+                <p>Trip advisor</p>
+                <p>Agoda</p>
+            </div>
+        </div>
+        <hr>
+        <div class="footer--container2">
+            <p class="end--line">Ⓒ 2023 WizInoa. All rights reserved</p>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+            var element = document.getElementById("ul--container");
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

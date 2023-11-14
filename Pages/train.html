@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Bookings</title>
+    <link rel="stylesheet" href="./CSS/train.css">
+    <script src="https://kit.fontawesome.com/69d1526178.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><b>HAPPY<span style="color: rgb(144, 223, 26);">TRIP</span></b></a>
+        </div>
+        <div class="spacer"></div>
+        <ul id="ul--container">
+            <li><a href="./flight.html"><b>FLIGHTS</b></a></li>
+            <li><a href="./bus.html"><b>BUSES</b></a></li>
+            <li><a href="./hotel.html"><b>HOTELS</b></a></li>
+        </ul>
+        <div id="icon">
+            <a href="javascript:void(0);" onclick=myFunction()>
+                <i class="fa-solid fa-bars" style="color:white;"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div id="home">
+            <div class="home--container">
+                <div class="background--overlay"></div>
+                <div class="home--img">
+                    <img src="./Images/train2-transformed.jpg" alt="train_track">
+                </div>
+                <div class="bread--crumbs"><a href="./index.html"><b>Home </a>>> Train</b></div>
+                <div class="input--container">
+                    <h1>Train Ticket Booking</h1>
+                    <div class="irctc--content">
+                        <img src="./Images/irctc-logo.jpg" alt="IRCTC-logo">
+                        <p>Authorised by <b>IRCTC</b></p>
+                    </div>
+                    <form id="input--content">
+                        <div class="selection">
+                            <div class="what--for">
+                                <input type="radio" id="name1" name="radio1" value="book-ticker">
+                                <label for="name1"><b>Book Train Tickets</b></label>
+                            </div>
+                            <div class="what--for">
+                                <input type="radio" id="name2" name="radio1" value="check-pnr">
+                                <label for="name2"><b>Check PNR Status</b></label>
+                            </div>
+                        </div>
+                        <div class="from--to">
+                            <input type="text" placeholder="From station">
+                            <button><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+                            <input type="text" placeholder="To station">
+                        </div>
+                        <div class="dates">
+                            <button>
+                                <input type="date">
+                                <span><b>Trip Date</b></span>
+                            </button>
+                            <button class="return">
+                                <input type="date">
+                                <span><b>Return</b></span>
+                            </button>
+                        </div>
+                        <button class="train--button">Search Trains</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="offer">
+            <div class="offer--container">
+                <div class="offer-title">Offers for you</div>
+                <div class="offer--content">
+                    <div class="offer--card">
+                        <img src="./Images/piggy_bank.png" alt="piggy">
+                        <div class="offer--date">
+                            <p>Flat Rs: 100 OFF on <br> <b>AC tier Train tickets</b></p>
+                            <p>Offer valid till : 30 Nov</p>
+                        </div>
+                    </div>
+                    <div class="offer--card">
+                        <img src="./Images/piggy_bank.png" alt="piggy">
+                        <div class="offer--date">
+                            <p>Flat Rs: 60 OFF on <br> <b>normal Train tickets</b></p>
+                            <p>Offer valid till : 30 Nov</p>
+                        </div>
+                    </div>
+                    <div class="offer--card">
+                        <img src="./Images/piggy_bank.png" alt="piggy">
+                        <div class="offer--date">
+                            <p><b>Zero convenience fee</b></p>
+                            <p>Offer valid till : 30 Nov</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div class="about--container">
+                <div class="about--title">IRCTC Authorised Ticket Booking</div>
+                <p class="about--para">Book IRCTC Train Tickets on Happytrip and enjoy simple & superfast booking
+                    process with no service
+                    fee + no payment gateway charge.
+                </p>
+                <div class="about--content">
+                    <div class="about--card">
+                        <img src="./Images/handshake.jpg" alt="handshake">
+                        <div class="line">
+                            <p><b>Authorised IRCTC Partner</b></p><br>
+                            <p>Book your train tickets with trust</p>
+                        </div>
+                    </div>
+                    <div class="about--card">
+                        <img src="./Images/customer_support.jpeg" alt="customer_support">
+                        <div class="line">
+                            <p><b>Dedicated Customer Support</b></p><br>
+                            <p>Get dedicated customer support for all your queries</p>
+                        </div>
+                    </div>
+                    <div class="about--card">
+                        <img src="./Images/money_refund.png" alt="refund">
+                        <div class="line">
+                            <p><b>Instant Refunds</b></p><br>
+                            <p>Get Instant Refunds on your UPI payments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="FAQ">
+            <div class="faq--container">
+                <div class="faq--title">Frequently Asked Questions</div>
+                <div class="faq--head">How can I complete an online train ticket booking with Happytrip?</div>
+                <p>Booking a train ticket online can be completed with ease in just a few simple steps.
+                    If you're on the app, first click on the "Happytrip" icon that's displayed on your screen.
+                    Enter the source and destination locations along with the date of travel.
+                    Once done, a list of trains operating on your route will be displayed.
+                    Select the train and class of your choice, select the boarding and destination stations, enter the
+                    details of the passenger and complete the payment.
+                    You can download the ticket and the invoice once your payment has been processed.
+                </p>
+                <hr>
+                <div class="faq--head">Do I need to make an account to make an IRCTC train ticket booking online?</div>
+                <p>Yes, and this has its advantages. This would help expedite the booking process when you have to enter
+                    details about the passenger and while completing the payment process.</p>
+                <hr>
+                <div class="faq--head">How is Happytrip connected to redBus?</div>
+                <p>Utilising the massive successful experience in the travel booking site industry, Happytrip aims to
+                    attain the same success in the train industry as well.
+                    A customer can view, book, and complete their payment of train tickets on the Happytrip app or page
+                    by clicking on the "Happytrip" option that's provided.
+                </p>
+                <hr>
+                <div class="faq--head">How to cancel a train ticket booked through Happytrip?</div>
+                <p>Cancelling an online train ticket booking through Happytrip can be done as easily as booking a train
+                    ticket.
+                    When you view the details of your train ticket booking on the app or website, you are presented with
+                    the option to either modify your booking or cancel the ticket.
+                    Click on the option that best suits your travel needs. A small cancellation fee might be charged
+                    based on the timing of your cancellation request.
+                </p>
+                <hr>
+                <div class="faq--head">How do I pay for my online train ticket booking that is made through Happytrip?
+                </div>
+                <p>You can complete your online train ticket booking by using any of the variety of payment options that
+                    are available at your disposal. Customers can use any amount that's remaining in their Happytrip
+                    wallet, credit or debit cards, Wallets such as Amazon Pay or through UPI payment gateways such as
+                    GooglePay, PhonePe, etc. Payments made online on Happytrip are safe and secure and eliminate the
+                    need to wait in a queue.
+                </p>
+                <hr>
+                <div class="faq--head">Are there any cancellation charges levied when a train ticket is cancelled?</div>
+                <p>Yes, there are. Depending on when the cancellation was initiated, an amount might get deducted to
+                    compensate any losses incurred by IRCTC, Railways, etc. Customers can opt for the “Free
+                    Cancellation” policy by paying an extra amount at the time of booking. This comes in handy when
+                    travel plans are not concrete.
+                </p>
+                <hr>
+                <div class="faq--head">How many people can I book a seat on a train with a single train ticket booking?
+                </div>
+                <p>Customers can book a maximum of 6 seats on a single train ticket booking that's made through
+                    Happytrip.
+                </p>
+                <hr>
+                <div class="faq--head">What are some of the advantages of booking a train ticket with Happytrip?</div>
+                <p>One of the key advantages of making an online train ticket booking with Happytrip is convenience. In
+                    the current environment where safety is a priority, customers can view, select, and make their
+                    payments online from the comfort of their homes. Happytrip displays vital information pertaining to
+                    their train journey.
+                </p>
+                <hr>
+                <div class="faq--head">Can I check the PNR status of the train on Happytrip?</div>
+                <p>Yes, you can. Simply click on the “PNR Status” button that's available and enter the details
+                    requested to view the updated PNR status of the train on your upcoming journey. You can even track
+                    the train by clicking on the “Live Train Status” button.
+                </p>
+                <hr>
+                <div class="faq--head">Do I get the option to select my seat or berth on the train?</div>
+                <p>Yes, you can. While entering the details of the passenger, you can select the berth of your choice.
+                    If there are multiple seats booked through one booking, you can select a berth for each passenger
+                    individually. You also get the option to make a reservation preference such as booking all berths on
+                    one coach, if there are one or two lower berths, and more.
+                </p>
+                <hr>
+                <div class="faq--head">Should I book my train ticket in advance?</div>
+                <p>It is advisable to complete your online train ticket booking through Happytrip in advance as this
+                    would ensure that you have more choices when it comes to the trains operating on your route as well
+                    as ensures that you have more options related to selecting the berth of your choice.
+                </p>
+                <hr>
+                <div class="faq--head">Where can I view the train ticket that I have booked through Happytrip?</div>
+                <p>The train ticket will be displayed on the website, app, and will also be available in the registered
+                    email that has been used.
+                </p>
+                <hr>
+                <div class="faq--head">Can I book a train ticket through the Tatkal Quota?</div>
+                <p>Yes, you can though this is quota is subject to seat availability. With the convenience of viewing
+                    updated trains and their berth availability, it is advisable to complete your online train ticket
+                    booking earlier through Happytrip.
+                </p>
+                <hr>
+                <div class="faq--head">Are there any offers that can be availed when making an online train ticket
+                    booking on Happytrip?</div>
+                <p>Yes. Happytrip offers are provided on a regular basis and the offer details can be found on the
+                    Happytrip homepage or on the app. Enter the offer code at the time of making your payment and avail
+                    a discount on your train tickets online.
+                </p>
+                <hr>
+                <div class="faq--head">If I wasn,t able to cancel my train ticket but I ended up missing the train, can
+                    I file a TDR
+                    through Happytrip?</div>
+                <p>Yes, you most certainly can. You can do so on the booking confirmation page. Select the reason for
+                    filing a TDR. A GC/EFT certificate might be needed and this can be obtained at the departure station
+                    or from the TT.</p>
+                <hr>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer--container1">
+            <div class="footer--about1">
+                <div class="logo">
+                    <a href="./index.html"><b>HAPPY<span style="color: rgb(136, 201, 39);">TRIP</span></b></a>
+                </div>
+                <p>Happytrip is one of the world's largest online travel ticket booking service trusted by over 25
+                    million
+                    happy customers globally. Happytrip offers travel ticket booking through its website, iOS and
+                    Android
+                    mobile apps for all major travel things.
+                </p>
+                <div class="footer--sm">
+                    <h2>Find us on : </h2>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer--about2">
+                <h3>About Happytrip</h3>
+                <p>About us</p>
+                <p>Contact us</p>
+            </div>
+            <div class="info">
+                <h3>Info</h3>
+                <p>T & C</p>
+                <p>Privacy policy</p>
+                <p>FAQ</p>
+            </div>
+            <div class="global--sites">
+                <h3>Global sites</h3>
+                <p>India</p>
+                <p>Sri lanka</p>
+                <p>Malaysia</p>
+                <p>Singapore</p>
+                <p>Indonesia</p>
+            </div>
+            <div class="our--partners">
+                <h3>Our partners</h3>
+                <p>Air Asia</p>
+                <p>Air India</p>
+                <p>IndiGo</p>
+                <p>Redbus</p>
+                <p>STC'S</p>
+                <p>Trivago hotels</p>
+                <p>OYO hotels</p>
+                <p>Trip advisor</p>
+                <p>Agoda</p>
+            </div>
+        </div>
+        <hr>
+        <div class="footer--container2">
+            <p class="end--line">Ⓒ 2023 WizInoa. All rights reserved</p>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+            var element = document.getElementById("ul--container");
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

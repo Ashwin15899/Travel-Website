@@ -1,0 +1,719 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-transform: capitalize; */
+}
+
+header {
+    display: flex;
+    padding: 15px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0%;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.logo a {
+    font-size: 25px;
+    color: black;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+#ul--container {
+    display: flex;
+    padding: 5px 30px;
+}
+
+#ul--container li b {
+    font-size: 18px;
+    color: rgb(157, 232, 45);
+    margin: 7vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+#icon {
+    display: none;
+}
+
+.home--container {
+    position: relative;
+}
+
+.background--overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    /* border: 2px solid black; */
+}
+
+.home--img img {
+    height: 100vh;
+    width: 100%;
+}
+
+.bread--crumbs {
+    position: absolute;
+    top: 15vh;
+    font-size: 18px;
+    left: 5vh;
+    color: black;
+    /* background-color: blanchedalmond; */
+    /* padding: 10px; */
+}
+
+.bread--crumbs a {
+    color: rgb(157, 232, 45);
+}
+
+.input--container {
+    position: absolute;
+    top: 20vh;
+    font-size: 18px;
+    left: 50vh;
+    /* border: 1px solid black; */
+    animation: input-content 2s ease 0s 1 normal forwards;
+}
+
+.search--flight {
+    color: rgb(157, 232, 45);
+    font-size: 30px;
+    margin: 15px;
+}
+
+.enjoy--line {
+    color: white;
+    margin: 0 20px;
+}
+
+#input--content {
+    margin: 20px;
+    /* border: 1px solid black; */
+}
+
+.selection {
+    display: flex;
+    padding: 10px;
+}
+
+.trip--plan {
+    /* border: 1px solid black; */
+    padding: 7px;
+    background-color: white;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.trip--plan input {
+    margin-right: 10px;
+    color: rgb(157, 232, 45);
+}
+
+.people,
+.from--to,
+.dates {
+    padding: 10px;
+}
+
+.people input,
+.from--to input {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.from--to input {
+    width: 40%;
+}
+
+.from--to button {
+    padding: 5px;
+    margin: 10px;
+    font-size: 20px;
+    /* background-color: rgb(157, 232, 45);  */
+    color: rgb(101, 161, 18);
+    border-radius: 100px;
+    border: none;
+}
+
+.dates button {
+    margin-right: 10px;
+}
+
+.dates input {
+    padding: 10px;
+    border: none;
+    color: rgb(101, 161, 18);
+}
+
+.dates span {
+    margin: 10px;
+    color: rgb(66, 97, 20);
+}
+
+.flight--button {
+    background-color: rgb(101, 161, 18);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    margin: 27px 0;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.ps--container,
+.pd--container,
+.detail--container {
+    margin: 15vh;
+}
+
+.ps--head,
+.pd--heading {
+    font-size: 30px;
+    color: rgb(66, 97, 20);
+}
+
+.ps--content,
+.pd--content {
+    margin: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ps--content p {
+    background-color: rgb(157, 232, 45);
+    color: white;
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+
+.pd--content img {
+    object-fit: cover;
+    height: 40vh;
+    width: 30vh;
+    border-radius: 20px;
+}
+
+.london,
+.paris,
+.delhi,
+.bangalore {
+    position: relative;
+    margin: 0 5vh;
+}
+
+.imgGrad {
+    background: linear-gradient(180deg, transparent 32.51%, rgba(0, 0, 0, .7) 73.54%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    bottom: 3px;
+    border-radius: 20px;
+}
+
+.cities {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: rgb(136, 201, 39);
+}
+
+.detail--container {
+    line-height: 25px;
+}
+
+.dc--head {
+    margin-top: 7vh;
+    margin-bottom: 3vh;
+    font-size: 30px;
+    color: rgb(136, 201, 39);
+}
+
+.detail--container p {
+    margin: 2vh 0;
+}
+
+.detail--container li {
+    margin-left: 10vh;
+}
+
+footer {
+    background-color: rgb(228, 225, 225);
+}
+
+.footer--container1 {
+    padding: 10vh 0;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 35px;
+}
+
+.footer--about1 {
+    width: 30%;
+    line-height: 30px;
+}
+
+.footer--about1 p {
+    margin: 15px 0;
+}
+
+.footer--about2,
+.info,
+.global--sites,
+.our--partners {
+    text-align: center;
+}
+
+hr {
+    margin: 0 10vh;
+}
+
+.end--line {
+    text-align: center;
+    padding: 3vh 0;
+}
+
+.footer--sm {
+    margin: 10vh 0;
+}
+
+.footer--sm i {
+    font-size: 25px;
+    color: rgb(136, 201, 39);
+    margin-top: 3vh;
+    margin-right: 3vh;
+}
+
+@media (max-width:912px) {
+    .logo a {
+        font-size: 40px;
+    }
+
+    #ul--container {
+        padding: 10px;
+    }
+
+    #ul--container li b {
+        font-size: 25px;
+        margin: 4vh;
+    }
+
+    #home img,
+    .background--overlay {
+        object-fit: cover;
+        height: 85vh;
+    }
+
+    .bread--crumbs {
+        top: 10vh;
+        left: 2vh;
+        font-size: 30px;
+    }
+
+    .search--flight {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .enjoy--line {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .input--container {
+        left: 0;
+        font-size: 25px;
+    }
+
+    .selection {
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .people,
+    .from--to,
+    .dates {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .people input,
+    .from--to input,
+    .dates input {
+        padding: 13px;
+        margin-right: 10px;
+        font-size: 19px;
+    }
+
+    .from--to button {
+        padding: 10px;
+        margin: 0px;
+        font-size: 25px;
+    }
+
+    .dates span {
+        font-size: 19px;
+    }
+
+    .flight--button {
+        padding: 15px;
+        font-size: 25px;
+        margin: 25px 0;
+        margin-left: 25vh;
+    }
+
+    .ps--container,
+    .pd--container,
+    .detail--container {
+        margin: 5vh;
+    }
+
+    .ps--head,
+    .pd--heading {
+        font-size: 35px;
+    }
+
+    .ps--content,
+    .pd--content {
+        margin: 0;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .ps--content p,
+    .london,
+    .paris,
+    .delhi,
+    .bangalore {
+        margin: 3vh;
+    }
+
+    .ps--content {
+        font-size: 25px;
+    }
+
+    .pd--content img {
+        object-fit: cover;
+        height: 20vh;
+        width: 15vh;
+    }
+
+    .dc--head {
+        margin-top: 3vh;
+        margin-bottom: 0;
+        font-size: 26px;
+    }
+
+    .detail--container {
+        line-height: 30px;
+    }
+
+    .detail--container p {
+        font-size: 20px;
+    }
+
+    .detail--container li {
+        margin-left: 5vh;
+        font-size: 20px;
+    }
+
+    .footer--container1 {
+        padding: 3vh;
+    }
+
+    .footer--sm {
+        margin: 3vh 0;
+    }
+
+    .footer--sm i {
+        margin-top: 2vh;
+        margin-right: 2vh;
+    }
+
+    .end--line {
+        padding: 2vh 0;
+    }
+}
+
+@media (max-width:820px) {
+
+    #home img,
+    .background--overlay {
+        height: 100vh;
+    }
+
+    .people input,
+    .from--to input,
+    .dates input {
+        margin: 8px;
+    }
+
+    .ps--content,
+    .pd--content {
+        margin: 2vh;
+    }
+
+    .ps--content p,
+    .london,
+    .paris,
+    .delhi,
+    .bangalore {
+        margin: 2vh;
+    }
+}
+
+@media (max-width:768px) {
+    .logo a {
+        font-size: 30px;
+    }
+
+    #ul--container {
+        padding: 5px;
+    }
+
+    #ul--container li b {
+        font-size: 22px;
+        margin: 5vh;
+    }
+
+    .bread--crumbs {
+        top: 9vh;
+        left: 2vh;
+        font-size: 24px;
+    }
+
+    .search--flight {
+        font-size: 30px;
+    }
+
+    .enjoy--line {
+        font-size: 22px;
+    }
+
+    #input--content {
+        margin: 7px;
+    }
+
+    .people,
+    .from--to,
+    .dates {
+        padding: 10px;
+    }
+
+    .people input,
+    .from--to input,
+    .dates input,
+    .dates span {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .flight--button {
+        font-size: 20px;
+        margin: 20px 0;
+        margin-left: 29vh;
+    }
+    .ps--head, .pd--heading {
+        font-size: 30px;
+    }
+    .ps--content {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:540px) {
+    .logo a,.search--flight  {
+        font-size: 22px;
+    }
+    #ul--container {
+        display: none;
+        position: absolute;
+        top: 8vh;
+        right: 2vh;
+        margin: 0;
+        background-color: rgb(136, 201, 39);
+        border-radius: 10px;
+    }
+    #ul--container li {
+        padding: 15px 0;
+    }
+
+    #ul--container li b {
+        color: white;
+        font-size: 15px; 
+        margin: 4vh;
+    }
+
+    #icon {
+        display: block;
+        font-size: none;
+        padding: 5px;
+        background-color: rgb(136, 201, 39);
+    }
+    .bread--crumbs {
+        top: 11vh;
+        left: 2vh;
+        font-size: 17px;
+    }
+    .input--container {
+        top: 17vh;
+        font-size: 15px;
+    }
+    .enjoy--line,.from--to button {
+        font-size: 17px;
+    }
+    #input--content {
+        margin: 0;
+    }    
+    .people, .from--to, .dates,.from--to button {
+        padding: 5px;
+    }
+    .people input, .from--to input, .dates input, .dates span {
+        padding: 5px;
+        font-size: 12px;
+    }   
+    .flight--button {
+        font-size: 15px;
+        padding: 10px;
+        margin: 10px 0;
+        margin-left: 30vh;
+    }
+    .ps--head, .pd--heading,.dc--head,.footer--sm i  {
+        font-size: 17px;
+    }
+    .ps--content, .detail--container p,.detail--container li,footer  {
+        font-size: 12px;
+    }
+    .detail--container {
+        line-height: 22px;
+    }
+    .footer--container1 {
+        flex-wrap: wrap;
+    }
+    .footer--about1 {
+        width: 100%;
+    }
+}
+
+@media (max-width:430px) {
+    #ul--container {
+        right: 1vh;
+    }
+    .input--container {
+        top: 26vh;
+    }
+    .people input, .from--to input{
+        padding: 8px;
+        font-size: 12px;
+    }
+    .dates input, .dates span {
+        padding: 0;
+        font-size: 10px;
+    }
+    .flight--button {
+        margin-top: 3vh;
+        margin-left: 17vh;
+    }
+    .ps--container, .pd--container, .detail--container {
+        margin: 3vh;
+    }
+    .ps--content, .pd--content {
+        margin: 1vh;
+        font-size: 11px;
+    }
+    .ps--head, .pd--heading, .dc--head, .footer--sm i {
+        font-size: 20px;
+    }
+    .detail--container {
+        line-height: 24px;
+    }
+    .detail--container p, .detail--container li{
+        font-size: 15px;
+    }
+    .footer--container1 {
+        font-size: 17px;
+    }
+    .footer--container2{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:380px) {
+    header,.selection  {
+        padding: 10px;
+    }
+    .logo a, .search--flight,.ps--head, .pd--heading, .dc--head, .footer--sm i  {
+        font-size: 17px;
+    }
+    .search--flight {
+        margin: 10px;
+    }
+    .bread--crumbs,.enjoy--line,.footer--container1 {
+        font-size: 13px;
+    }
+    .input--container {
+        top: 20vh;
+        font-size: 11px;
+    }
+    .trip--plan {
+        padding: 4px;
+    }
+    .trip--plan input {
+        margin-right: 4px;
+    }
+    .people input, .from--to input {
+        padding: 4px;
+        font-size: 10px;
+    }
+    .from--to button,.detail--container p, .detail--container li  {
+        font-size: 12px;
+    }
+    .dates button {
+        margin-right: 5px;
+    }
+    .flight--button {
+        font-size: 12px;
+        padding: 7px;
+        margin-left: 22vh;
+    }
+}
+
+@media (max-width:361px) {
+    .flight--button {
+        margin-left: 18vh;
+    }
+    .ps--content, .pd--content {
+        margin: 1vh;
+        font-size: 10px;
+    }
+}
+
+@keyframes input-content {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

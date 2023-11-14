@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel booking</title>
+    <link rel="stylesheet" href="./CSS/hotel.css">
+    <script src="https://kit.fontawesome.com/69d1526178.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><b>HAPPY<span style="color: rgb(144, 223, 26);">TRIP</span></b></a>
+        </div>
+        <div class="spacer"></div>
+        <ul id="ul--container">
+            <li><a href="./flight.html"><b>FLIGHTS</b></a></li>
+            <li><a href="./train.html"><b>TRAINS</b></a></li>
+            <li><a href="./bus.html"><b>BUSES</b></a></li>
+        </ul>
+        <div id="icon">
+            <a href="javascript:void(0);" onclick=myFunction()>
+                <i class="fa-solid fa-bars" style="color:white;"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div id="home">
+            <div class="home--container">
+                <div class="background--overlay"></div>
+                <div class="home--img">
+                    <img src="./Images/hotelpic.jpg" alt="hotel">
+                </div>
+            </div>
+            <div class="bread--crumbs"><a href="./index.html"><b>Home </a>>> Hotel</b></div>
+            <div class="input--container">
+                <p class="comfort"><b>Discover The Perfect Balance Of Luxury And Comfort</b></p>
+                <p class="enjoy--line">We compare hotel prices from multiple sites</p>
+                <form id="input--content">
+                    <div class="at--where">
+                        <input type="text" placeholder="Your Destination">
+                    </div>
+                    <div class="people">
+                        <input type="text" placeholder="No.of.adults (Above 15)">
+                        <input type="text" placeholder="No.of.children (3 to 14)">
+                        <input type="text" placeholder="No.of.infants (below 2)">
+                        <input type="text" placeholder="No.of.Rooms">
+                    </div>
+                    <div class="dates">
+                        <button>
+                            <input type="date">
+                            <span><b>Check in</b></span>
+                        </button>
+                        <button class="return">
+                            <input type="date">
+                            <span><b>Check out</b></span>
+                        </button>
+                    </div>
+                    <button class="hotel--button">Search hotels</button>
+                </form>
+            </div>
+        </div>
+        <div id="partner">
+            <div class="partner--container">
+                <div class="partner--title">Our hotel partners</div>
+                <div class="partner--content">
+                    <div class="trivago">
+                        <img src="./Images/trivago.jpeg" alt="trivago">
+                        <p><b>TRIVAGO</b></p>
+                    </div>
+                    <div class="oyo">
+                        <img src="./Images/oyo.jpg" alt="oyo">
+                        <p><b>OYO</b></p>
+                    </div>
+                    <div class="tripadvisor">
+                        <img src="./Images/tripadvisor.png" alt="tripadvisor">
+                        <p><b>TRIP ADVISOR</b></p>
+                    </div>
+                    <div class="agoda">
+                        <img src="./Images/agoda.jpg" alt="agoda">
+                        <p><b>AGODA</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popular--hotels">
+            <div class="ph--container">
+                <div class="ph--heading">Popular Hotels</div>
+                <div class="ph--content">
+                    <div class="theritz">
+                        <img src="./Images/The-Ritz-Hotel-London.jpg" alt="theritz">
+                        <div class="imgGrad">
+                            <p class="hotel--name"><b>The ritz,</b></p>
+                            <p class="hotel--place">London</p>
+                        </div>
+                    </div>
+                    <div class="plaza">
+                        <img src="./Images/The-Plaza-Hotel-New-York.jpg" alt="plaza">
+                        <div class="imgGrad">
+                            <p class="hotel--name"><b>The plaza,</b></p>
+                            <p class="hotel--place">New york</p>
+                        </div>
+                    </div>
+                    <div class="Tajhotel">
+                        <img src="./Images/taj-palace-hotel-delhi.jpg" alt="taj-palace-hotel-delhi">
+                        <div class="imgGrad">
+                            <p class="hotel--name"><b>Taj Palace,</b></p>
+                            <p class="hotel--place">New Delhi</p>
+                        </div>
+                    </div>
+                    <div class="Sheraton">
+                        <img src="./Images/Sheraton-Grand-Bangalore-Hotel-at-Brigade-Gateway-1.webp"
+                            alt="Sheraton-Grand-Bangalore">
+                        <div class="imgGrad">
+                            <p class="hotel--name"><b>Sheraton grand,</b></p>
+                            <p class="hotel--place">Bangalore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="FAQ">
+            <div class="faq--container">
+                <div class="faq--title">Frequently Asked Questions</div>
+                <div class="faq--head">Can more than two adults stay in a room?</div>
+                <p>Most hotels allow additional guests to stay in a room for an extra charge as long as the room doesn't
+                    exceed the maximum number of guests allowed per room. If you book a room that cannot accommodate
+                    your group, the hotel may cancel your reservation or require that you book additional rooms. If you
+                    have doubts, check directly with your hotel for their extra-guest charges and the maximum number of
+                    people allowed in the room you've booked.
+                </p>
+                <hr>
+                <div class="faq--head">Our children will be travelling with us - Do they stay for free?</div>
+                <p>When making your booking, select the number of children traveling with you from the 'Children'
+                    drop-down box. If you select just 1 child, our search will give you the price of a double room with
+                    child, not including an extra bed. If you want an extra bed in the room, you need to increase the
+                    number of passengers in your search.</p>
+                <hr>
+                <div class="faq--head">What if I don't get a confirmation at the time of booking?</div>
+                <p>If a confirmation page doesn't display once you complete your booking, check your email for a
+                    confirmation. If you don't get an email confirmation within ten minutes, let us know at
+                    <a href="mailto:hotelcs@happytrip.com">hotelcs@happytrip.com</a>and we'll send you your confirmation
+                    details.
+                </p>
+                <hr>
+                <div class="faq--head">How long will it take for the hotel to get my booking confirmation?</div>
+                <p>The time it takes for a hotel to get your booking information varies by specific hotel and arrival
+                    date. In most cases the hotel should receive the reservation information within 12 hours of the time
+                    you made your booking (except for nights and weekends when the hotel's reservation department is
+                    closed). Please note that this doesn't apply to bookings made for the same day.
+                </p>
+                <hr>
+                <div class="faq--head">Do I have to show my ID proof at the time of check-in?</div>
+                <p>Yes, below are the applicable government issued photo-ids accepted by the hotel </p>
+                <ul>
+                    <li>1.Voter ID</li>
+                    <li>2.Driving License</li>
+                    <li>3.Passport</li>
+                </ul>
+                <p>A valid Photo ID has to be carried by every person above the age of 18 staying at the hotel.
+                    Accommodation can be denied if</p>
+                <ul>
+                    <li>1.guests posing as a 'couple' if suitable proof of identification is not presented at check-in.
+                    </li>
+                    <li>2.guest is a localite as the hotel reserves the right of admission.</li>
+                </ul>
+                </p>
+                <hr>
+                <div class="faq--head">How will I get my money back after cancelling a hotel booking?</div>
+                <p>We will credit the money back to the same account you used while making the booking. For example, if
+                    you used your credit card, we will make an appropriate charge reversal. If you used your debit card,
+                    we will credit the money back to the debit card.</p>
+                <hr>
+                <div class="faq--head">How long does it take to process this refund?</div>
+                <p>We usually process the refund within 4 working days from the cancellation request. However, it may
+                    take slightly longer to reflect in your account statement as this depends upon your bank. We've
+                    noticed that it takes about 14 working days for most refunds to hit their respective accounts.</p>
+                <hr>
+                <div class="faq--head">How do I modify a hotel booking?</div>
+                <p>Happytrip doesn't support modifications to hotel bookings. You'll have to cancel your existing
+                    booking and make a new one.</p>
+                <hr>
+                <div class="faq--head">I didn't get an e-mail confirmation. What do I do?</div>
+                <p>If you don't receive an email after making a reservation, it could be that we have the wrong email
+                    address on file or your Internet Service Provider blocked the email thinking it was spam (junk mail?
+                    from us? perish the thought). Check your spam folder, just in case, and add our email address -
+                    <a href="mailto:hotelcs@cleartrip.com">hotelcs@happytrip.com</a>
+                    - to your address book so that it doesn't get filtered out next time.
+                </p>
+                <hr>
+                <div class="faq--head">Will the hotel hold my room if I'm arriving late?</div>
+                <p>Since your reservation is guaranteed with a credit card, the hotel is obliged to hold your room until
+                    7 am, the day after your planned arrival date.</p>
+                <hr>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer--container1">
+            <div class="footer--about1">
+                <div class="logo">
+                    <a href="./index.html"><b>HAPPY<span style="color: rgb(136, 201, 39);">TRIP</span></b></a>
+                </div>
+                <p>Happytrip is one of the world's largest online travel ticket booking service trusted by over 25
+                    million
+                    happy customers globally. Happytrip offers travel ticket booking through its website, iOS and
+                    Android
+                    mobile apps for all major travel things.
+                </p>
+                <div class="footer--sm">
+                    <h2>Find us on : </h2>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer--about2">
+                <h3>About Happytrip</h3>
+                <p>About us</p>
+                <p>Contact us</p>
+            </div>
+            <div class="info">
+                <h3>Info</h3>
+                <p>T & C</p>
+                <p>Privacy policy</p>
+                <p>FAQ</p>
+            </div>
+            <div class="global--sites">
+                <h3>Global sites</h3>
+                <p>India</p>
+                <p>Sri lanka</p>
+                <p>Malaysia</p>
+                <p>Singapore</p>
+                <p>Indonesia</p>
+            </div>
+            <div class="our--partners">
+                <h3>Our partners</h3>
+                <p>Air Asia</p>
+                <p>Air India</p>
+                <p>IndiGo</p>
+                <p>Redbus</p>
+                <p>STC'S</p>
+                <p>Trivago hotels</p>
+                <p>OYO hotels</p>
+                <p>Trip advisor</p>
+                <p>Agoda</p>
+            </div>
+        </div>
+        <hr>
+        <div class="footer--container2">
+            <p class="end--line">Ⓒ 2023 WizInoa. All rights reserved</p>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+            var element = document.getElementById("ul--container");
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

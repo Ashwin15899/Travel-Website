@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus booking</title>
+    <link rel="stylesheet" href="./CSS/bus.css">
+    <script src="https://kit.fontawesome.com/69d1526178.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><b>HAPPY<span style="color: rgb(144, 223, 26);">TRIP</span></b></a>
+        </div>
+        <div class="spacer"></div>
+        <ul id="ul--container">
+            <li><a href="./flight.html"><b>FLIGHTS</b></a></li>
+            <li><a href="./train.html"><b>TRAINS</b></a></li>
+            <li><a href="./hotel.html"><b>HOTELS</b></a></li>
+        </ul>
+        <div id="icon">
+            <a href="javascript:void(0);" onclick=myFunction()>
+                <i class="fa-solid fa-bars" style="color:white;"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div id="home">
+            <div class="home--container">
+                <div class="background--overlay"></div>
+                <div class="home--img">
+                    <img src="./Images/three-buses.jpg" alt="redbus">
+                </div>
+            </div>
+            <div class="bread--crumbs"><a href="./Pages/index.html"><b>Home </a>>> Bus</b></div>
+            <div class="input--container">
+                <p class="book--bus"><b>Bus Ticket Booking</b></p>
+                <p class="enjoy--line"><b>Enjoy buses which gives you a comfortable experience</b></p>
+                <form id="input--content">
+                    <div class="from--to">
+                        <input type="text" placeholder="From">
+                        <button><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+                        <input type="text" placeholder="To">
+                    </div>
+                    <div class="dates">
+                        <button>
+                            <input type="date">
+                            <span><b>Trip Date</b></span>
+                        </button>
+                    </div>
+                    <button class="bus--button">Search Buses</button>
+                </form>
+            </div>
+        </div>
+        <div id="offer">
+            <div class="offer--container">
+                <div class="offer-title">Trending offers</div>
+                <div class="offer--content">
+                    <div class="offer--card1">
+                        <img src="./Images/TNSTC.png" alt="tnstc">
+                        <div class="discount">
+                            <b>Save up to Rs 200 on Tamil Nadu routes</b>
+                            <p>Valid till 31 Dec</p>
+                        </div>
+                    </div>
+                    <div class="offer--card2">
+                        <img src="./Images/Kerala SRTC.jpg" alt="kerala--rtc">
+                        <div class="discount">
+                            <b>Save up to Rs 200 on Kerala routes</b>
+                            <p>Valid till 31 Dec</p>
+                        </div>
+                    </div>
+                    <div class="offer--card3">
+                        <img src="./Images/APSRTC.png" alt="apsrtc">
+                        <div class="discount">
+                            <b>Save up to Rs 200 on AP & TL routes</b>
+                            <p>Valid till 31 Dec</p>
+                        </div>
+                    </div>
+                    <div class="offer--card4">
+                        <img src="./Images/KSRTC.jpeg" alt="ksrtc">
+                        <div class="discount">
+                            <b>Save up to Rs 200 on karnataka routes</b>
+                            <p>Valid till 31 Dec</p>
+                        </div>
+                    </div>
+                    <div class="offer--card5">
+                        <img src="./Images/MSRTC.png" alt="MSRTC">
+                        <div class="discount">
+                            <b>Save up to Rs 200 on Maharashtra routes</b>
+                            <p>Valid till 31 Dec</p>
+                        </div>
+                    </div>
+                    <div class="offer--card6">
+                        <img src="./Images/GSRTC.webp" alt="gsrtc">
+                        <div class="discount">
+                            <b>Save up to Rs 200 on Gujarat routes</b>
+                            <p>Valid till 31 Dec</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="popular--destinations">
+            <div class="pd--container">
+                <div class="pd--title">Popular Destinations</div>
+                <div class="pd--content">
+                    <div class="bangalore">
+                        <img src="./Images/bangalore.jpg" alt="bangalore">
+                        <div class="imgGrad">
+                            <p class="cities"><b>Bangalore</b></p>
+                        </div>
+                    </div>
+                    <div class="chennai">
+                        <img src="./Images/chennai.jpg" alt="chennai">
+                        <div class="imgGrad">
+                            <p class="cities"><b>Chennai</b></p>
+                        </div>
+                    </div>
+                    <div class="madurai">
+                        <img src="./Images/madurai.jpg" alt="madurai">
+                        <div class="imgGrad">
+                            <p class="cities"><b>Madurai</b></p>
+                        </div>
+                    </div>
+                    <div class="hyderabad">
+                        <img src="./Images/hyderabad.jpg" alt="hyderabad">
+                        <div class="imgGrad">
+                            <p class="cities"><b>Hyderabad</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="primo">
+            <div class="primo--container">
+                <div class="primo--img">
+                    <img src="./Images/primoTopBanner.svg" alt="primo">
+                </div>
+                <div class="primo--content">
+                    <div class="primo--card">
+                        <img src="./Images/primo1.svg" alt="primo">
+                        <div class="abt--primo">
+                            <b>1 of 5 buses qualify</b>
+                            <p>Primo's strict safety qualification ensures a safer travel for you</p>
+                        </div>
+                    </div>
+                    <div class="primo--card">
+                        <img src="./Images/primoSubImg2.svg" alt="primo">
+                        <div class="abt--primo">
+                            <b>Preferred by 90%</b>
+                            <p>90% of travellers re-book Primo buses for its punctuality and comfort</p>
+                        </div>
+                    </div>
+                    <div class="primo--card">
+                        <img src="./Images/primoSubImg3.svg" alt="primo">
+                        <div class="abt--primo">
+                            <b>9 Lac+ monthly travellers</b>
+                            <p>In 2022, 9 Lac+ people traveled with Primo every month</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="FAQ">
+            <div class="faq--container">
+                <div class="faq--title">Frequently Asked Questions</div>
+                <div class="faq--head">Can I track the location of my booked bus online?</div>
+                <p>Yes, you can track your bus online by using our bus tracking app feature called Track My Bus.
+                    This feature allows passengers and their families to track the live bus tracking location.
+                    You may follow your bus on a map and use the information to plan your trip to the boarding point and
+                    to get off at the correct stop.
+                    Family and friends may also check the bus position to plan pick-ups and ensure your safety.
+                </p>
+                <hr>
+                <div class="faq--head">Do I need to create an account on the Happytrip site to book my bus ticket?</div>
+                <p>No, you don,t have to create an account on Happytrip site to book your bus ticket.
+                    But it is advisable to create one to accelerate the process next time you want to book bus tickets.
+                    Also Happytrip has many discounts and offers that you can easily access if you have an account with
+                    us.</p>
+                <hr>
+                <div class="faq--head">What's New in Bus Booking on HappyTrip?</div>
+                <p>Primo Bus Ticket: Happytrip has launched Primo bus services, where passengers can enjoy traveling in
+                    high-rated buses with best-in-class services.
+                    While looking for bus tickets on the desired route, customers can check the Primo tag to choose this
+                    excellent service.
+                    From hygiene standards to on-time service and comfort, passengers can benefit from online bus
+                    booking experience from Primo buses.
+                </p>
+                <hr>
+                <div class="faq--head">Can I change the date of my journey after I have booked my bus ticket?</div>
+                <p>Yes. You can change the date of journey after booking bus ticket on Happytrip by clicking the
+                    “Reschedule” icon if you think your travel plan might get interrupted while booking.
+                    Bus operators with the “Reschedule icon” next to it offer rescheduling of the bus ticket in case
+                    your initially selected date is not viable to travel on.
+                </p>
+                <hr>
+                <div class="faq--head">I've lost my ticket. What should I do now?</div>
+                <p>A copy of the bus ticket would have been sent to you by email when you booked bus ticket online .
+                    Please take a printout of that mail and produce it at the time of boarding.
+                    If you have not received the ticket e-mail, please call any of our call centers and our executive
+                    will resend you a copy by mail.
+                </p>
+                <hr>
+                <div class="faq--head">Is it safe to use my credit or debit card to buy bus tickets on HappyTrip?</div>
+                <p>Transactions on Happytrip are very safe. We employ the best-in-class security and the transactions
+                    done are secure.
+                    Apart from being certified by Verisign, Happytrip uses Secure Socket Layers (SSL) data encryption. \
+                    Using SSL ensures that the information exchanged with us is never transmitted unencrypted, thus
+                    protecting the information from being viewed by unauthorized individuals.
+                </p>
+                <hr>
+                <div class="faq--head">What are the different payment options available on Bus Ticket booking?</div>
+                <p>There are many payment modes available to book buses on the Happytrip website and app. Some of these
+                    payment modes that are available for the Happytrip booking process are:</p>
+                <ul>
+                    <li>Debit Card/Credit Card/ATM Cards (Visa, MasterCard, Maestro & Rupay)</li>
+                    <li>Net Banking (HDFC Bank, ICICI Bank, Indian Bank, Axis Bank, SBI and all major banks)</li>
+                    <li>UPI (Google Pay, Amazon Pay, PhonePe)</li>
+                    <li>Book Now, Pay Later (Simple)</li>
+                    <li>Wallets (Paytm)</li>
+                </ul>
+                <p>Make sure to check the coupon code to get the discounts on bus booking online, Happytrip offers a lot
+                    of HappyDeals to book the bus ticket on budget.</p>
+                <hr>
+                <div class="faq--head">How can I get a refund in case I cancel my ticket?</div>
+                <p>The refund is provided as per cancellation policy of the operator. The refund can be credited to the
+                    source of payment (Example: debit card, credit card, net banking) or credited to redBus wallet.
+                    Wallet credit can be used for bus booking in future (within 6 months of cancellation).
+                </p>
+                <hr>
+                <div class="faq--head">How can I reschedule my bus tickets?</div>
+                <p>To reschedule your bus ticket on Happytrip, follow these steps:</p>
+                <ul>
+                    <li>1.Visit https://www.Happytrip.in/reschedule</li>
+                    <li>2.Search for your bus ticket by entering your ticket number and registered email ID.</li>
+                    <li>3.Verify your online bus tickets details and select the date to reschedule your journey.</li>
+                    <li>4.Select a bus operator, verify every detail, and make your payment if any difference in bus
+                        ticket prices needs to be cleared.</li>
+                </ul>
+                <hr>
+                <div class="faq--head">Details on Insurance</div>
+                <p>For details on Insurance of your journey after bus ticket booking, please refer to the Insurance
+                    Terms
+                </p>
+                <hr>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer--container1">
+            <div class="footer--about1">
+                <div class="logo">
+                    <a href="./index.html"><b>HAPPY<span style="color: rgb(136, 201, 39);">TRIP</span></b></a>
+                </div>
+                <p>Happytrip is one of the world's largest online travel ticket booking service trusted by over 25
+                    million
+                    happy customers globally. Happytrip offers travel ticket booking through its website, iOS and
+                    Android
+                    mobile apps for all major travel things.
+                </p>
+                <div class="footer--sm">
+                    <h2>Find us on : </h2>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer--about2">
+                <h3>About Happytrip</h3>
+                <p>About us</p>
+                <p>Contact us</p>
+            </div>
+            <div class="info">
+                <h3>Info</h3>
+                <p>T & C</p>
+                <p>Privacy policy</p>
+                <p>FAQ</p>
+            </div>
+            <div class="global--sites">
+                <h3>Global sites</h3>
+                <p>India</p>
+                <p>Sri lanka</p>
+                <p>Malaysia</p>
+                <p>Singapore</p>
+                <p>Indonesia</p>
+            </div>
+            <div class="our--partners">
+                <h3>Our partners</h3>
+                <p>Air Asia</p>
+                <p>Air India</p>
+                <p>IndiGo</p>
+                <p>Redbus</p>
+                <p>STC'S</p>
+                <p>Trivago hotels</p>
+                <p>OYO hotels</p>
+                <p>Trip advisor</p>
+                <p>Agoda</p>
+            </div>
+        </div>
+        <hr>
+        <div class="footer--container2">
+            <p class="end--line">Ⓒ 2023 WizInoa. All rights reserved</p>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+            var element = document.getElementById("ul--container");
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
